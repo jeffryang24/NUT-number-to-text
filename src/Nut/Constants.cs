@@ -14,6 +14,7 @@
         public const string Spanish = "es";
         public const string Turkish = "tr";
         public const string Ukrainian = "ua";
+        public const string Indonesian = "id";
     }
 
     public static class Culture
@@ -26,6 +27,7 @@
         public const string Spanish = "es-ES";
         public const string Turkish = "tr-TR";
         public const string Ukrainian = "uk-UA";
+        public const string Indonesian = "id-ID";
     }
 
     public static class Currency
@@ -36,6 +38,7 @@
         public const string TRY = "try";
         public const string USD = "usd";
         public const string UAH = "uah";
+        public const string IDR = "idr";
     }
 
 }

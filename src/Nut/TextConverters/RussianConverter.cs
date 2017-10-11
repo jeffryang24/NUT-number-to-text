@@ -202,6 +202,14 @@ namespace Nut.TextConverters
                         Names = new[] { "гривня", "гривні", "гривень" },
                         SubUnitCurrency = new BaseCurrencyModel { Names = new[] { "копейка", "копейки", "копеек" } }
                     };
+
+                case Currency.IDR:
+                    return new CurrencyModel
+                    {
+                        Currency = currency,
+                        Names = new[] { "rupiah", "rupiah" },
+                        SubUnitCurrency = new BaseCurrencyModel { Names = new[] { "" } } // No cent (SubUnitCurrency) in Rupiah
+                    };
             }
             return null;
         }

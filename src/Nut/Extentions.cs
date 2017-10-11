@@ -39,6 +39,10 @@ namespace Nut
                 case Culture.Ukrainian:
                     text = UkrainianConverter.Instance.ToText(num);
                     break;
+                case Language.Indonesian:
+                case Culture.Indonesian:
+                    text = IndonesianConverter.Instance.ToText(num);
+                    break;
             }
             return text;
         }
@@ -72,6 +76,10 @@ namespace Nut
                 case Language.Ukrainian:
                 case Culture.Ukrainian:
                     text = UkrainianConverter.Instance.ToText(num, currency, options);
+                    break;
+                case Language.Indonesian:
+                case Culture.Indonesian:
+                    text = IndonesianConverter.Instance.ToText(num, currency, options);
                     break;
             }
             return text;
